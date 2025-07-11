@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Hotel</title>
+    <link rel="stylesheet" href="index3-style.css">
+    <style>
+        body {
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            margin: 50px 10px 0 10px;
+            padding-top: 30px;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .poster {
+            width: 50%;
+            max-width: 300px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+        }
+
+        .download-button {
+            width: 180px;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .vip-popup {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(10, 10, 10, 0.85);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .vip-content {
+            background: #111;
+            padding: 30px 40px;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 0 20px #f00;
+        }
+
+        #vip-countdown {
+            font-size: 2.5em;
+            margin: 15px 0;
+        }
+
+        .vip-skip {
+            color: #00ffcc;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        h1, p {
+            color: #ffffff;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-button::before {
+            content: '\2190';
+            font-size: 20px;
+            margin-right: 8px;
+        }
+
+        .back-button:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Back button -->
+    <a href="index.html" class="back-button">Back</a>
+
+    <div class="container">
+        <img src="images/Grand_Hotel.jpg" alt="duo_house" class="poster">
+        <h1>Grand Hotel</h1>
+        <p>A Insane Grand Hotel!</p>
+
+        <a href="javascript:void(0);" onclick="startVipCountdown('Grand')">
+            <img src="images/download_button.png" class="download-button" alt="Download">
+        </a>
+    </div>
+
+    <!-- VIP Popup -->
+    <div id="vip-popup" class="vip-popup">
+        <div class="vip-content">
+            <p>Please wait while your download is being prepared</p>
+            <div id="vip-countdown">20</div>
+            <p><span class="vip-skip" onclick="window.location.reload()">Cancel</span></p>
+        </div>
+    </div>
+
+    <script src="index11.js"></script>
+</body>
+</html>

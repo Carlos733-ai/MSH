@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Schematics Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+    <img src="images/Logo.png" class="Web-Logo" alt="Logo">
+
+    <div class="game-list">
+        <!-- Duo House -->
+        <div class="game-container" data-description="A Simple Duo House For Your Server!">
+            <a href="index2.html">
+                <img src="images/duo_House.jpg" class="game-banner" alt="duo_House">
+            </a>
+            <p class="game-title">Duo House</p>
+            <p class="game-description">A Simple Duo House For Your Server</p>
+            <a href="index2.html">
+                <img src="images/download_button.png" class="download-button" alt="Download">
+            </a>
+        </div>
+                <!-- Overgrown House -->
+        <div class="game-container" data-description="An Overgrown Survival Castle!">
+            <a href="index3.html">
+                <img src="images/Overgrown_House.jpg" class="game-banner" alt="duo_House">
+            </a>
+            <p class="game-title">Overgrown Survival Castle</p>
+            <p class="game-description">An Overgrown Survival Castle!</p>
+            <a href="index3.html">
+                <img src="images/download_button.png" class="download-button" alt="Download">
+            </a>
+        </div>
+                        <!-- Forest House -->
+        <div class="game-container" data-description="A Forest House!">
+            <a href="index4.html">
+                <img src="images/Forest_house.jpg" class="game-banner" alt="duo_House">
+            </a>
+            <p class="game-title">Forest House</p>
+            <p class="game-description">A Forest House!</p>
+            <a href="index4.html">
+                <img src="images/download_button.png" class="download-button" alt="Download">
+            </a>
+        </div>
+                                <!-- Country House -->
+        <div class="game-container" data-description="A Country House!">
+            <a href="index5.html">
+                <img src="images/Country_House.png" class="game-banner" alt="duo_House">
+            </a>
+            <p class="game-title">Country House</p>
+            <p class="game-description">A Country House!</p>
+            <a href="index5.html">
+                <img src="images/download_button.png" class="download-button" alt="Download">
+            </a>
+        </div>
+                                        <!-- Medival Farmhouse -->
+        <div class="game-container" data-description="A Medival Farmhouse!">
+            <a href="index6.html">
+                <img src="images/Medival_Farmhouse.jpg" class="game-banner" alt="duo_House">
+            </a>
+            <p class="game-title">Medival Farmhouse</p>
+            <p class="game-description">A Medival Farmhouse!</p>
+            <a href="index6.html">
+                <img src="images/download_button.png" class="download-button" alt="Download">
+            </a>
+        </div>
+                                                <!-- Mangorve House -->
+        <div class="game-container" data-description="A Mangorve House!">
+            <a href="index7.html">
+                <img src="images/Mangorve.png" class="game-banner" alt="duo_House">
+            </a>
+            <p class="game-title">Mangorve House</p>
+            <p class="game-description">A Mangorve House!</p>
+            <a href="index7.html">
+                <img src="images/download_button.png" class="download-button" alt="Download">
+            </a>
+        </div>
+                                                        <!-- Orange Roofs -->
+        <div class="game-container" data-description="A Orange Roofed City!">
+            <a href="index8.html">
+                <img src="images/orangeroofs.png" class="game-banner" alt="duo_House">
+            </a>
+            <p class="game-title">Orange Roofs</p>
+            <p class="game-description">A Orange Roofed City!</p>
+            <a href="index8.html">
+                <img src="images/download_button.png" class="download-button" alt="Download">
+            </a>
+        </div>
+                                                                <!-- Sword -->
+        <div class="game-container" data-description="A Gaint Sword Build!">
+            <a href="index9.html">
+                <img src="images/sword.png" class="game-banner" alt="duo_House">
+            </a>
+            <p class="game-title">Sword</p>
+            <p class="game-description">A Gaint Sword Build!</p>
+            <a href="index9.html">
+                <img src="images/download_button.png" class="download-button" alt="Download">
+            </a>
+        </div>
+                                                                        <!-- 3 story mansion -->
+        <div class="game-container" data-description="A Gaint 3 Story Mansion!">
+            <a href="index10.html">
+                <img src="images/3story.jpg" class="game-banner" alt="duo_House">
+            </a>
+            <p class="game-title">3 Story Mansion</p>
+            <p class="game-description">A Gaint 3 Story Mansion!</p>
+            <a href="index10.html">
+                <img src="images/download_button.png" class="download-button" alt="Download">
+            </a>
+        </div>
+                                                                                <!-- Grand Hotel -->
+        <div class="game-container" data-description="A Insane Grand Hotel">
+            <a href="index11.html">
+                <img src="images/Grand_Hotel.jpg" class="game-banner" alt="duo_House">
+            </a>
+            <p class="game-title">Grand Hotel</p>
+            <p class="game-description">A Insane Grand Hotel!</h1></p>
+            <a href="index11.html">
+                <img src="images/download_button.png" class="download-button" alt="Download">
+            </a>
+        </div>
+    </div>
+
+    <p class="disclaimer">This site is not affiliated with Mojang, Microsoft, or Minecraft in any way. All trademarks belong to their respective owners. Also Were Sorry About The Misspelled Link.</p>
+    <!-- Dark Mode Toggle -->
+    <div id="dark-toggle" onclick="toggleDarkOverlay()">🌙</div>
+ <div class="circular-button donate-button" onclick="window.open('https://ko-fi.com/minecraftschematics', '_blank')">☕</div>
+    <!-- 🎨 Theme Pack Toggle -->
+    <div id="theme-toggle">🎨</div>
+    <div id="theme-menu">
+<!-- No Image Themes -->
+<Tag onclick="JustTag1('NoImage')">No Image Themes</Tag>
+<button onclick="setTheme('default')">Default</button>
+<button onclick="setTheme('cyberpunk')">Cyberpunk</button>
+<button onclick="setTheme('midnight')">Midnight</button>
+<!-- Image Themes -->
+<Tag onclick="JustTag2('Image')">Image Themes</Tag>
+<button onclick="setTheme('PaperB')">Black Paper</button>
+<button onclick="setTheme('Sky')">Sky</button>
+<button onclick="setTheme('Glitch')">Glitch</button>
+<button onclick="setTheme('Galaxy')">Galaxy</button>
+<!-- Gif Themes -->
+<Tag onclick="JustTag3('Gifs')">Gif Themes</Tag>
+<button onclick="setTheme('pixelblast')">Pixel Blast</button>
+<button onclick="setTheme('HackerCMD')">Matrix</button>
+<!-- VIP Themes -->
+<Tag onclick="JustTag4('Vip')"><a href="donate.html" style="color:Blue; text-decoration:underline;" onclick="event.stopPropagation();">VIP Themes</a></Tag>
+<button onclick="checkVIPAccess('vip-aurora')">VIP-Aurora</button>
+<button onclick="checkVIPAccess('vip-neon')">VIP-Neon</button>
+<button onclick="checkVIPAccess('vip-sun')">VIP-Sun</button>
+<button onclick="checkVIPAccess('vip-drift')">VIP-Nebula Drift</button>
+</div>
+     
+    <!-- Extra Handler -->
+
+    <script>
+        const darkOverlay = document.createElement("div");
+        darkOverlay.classList.add("dark-overlay");
+        document.body.appendChild(darkOverlay);
+
+        function toggleDarkOverlay() {
+            const isActive = darkOverlay.classList.contains("active");
+
+            if (isActive) {
+                darkOverlay.classList.remove("active");
+                localStorage.setItem("darkMode", "off");
+                document.querySelectorAll(".game-container").forEach(el => el.classList.remove("dark-glow"));
+                darkOverlay.style.transition = "opacity 0.8s ease-out";
+            } else {
+                darkOverlay.classList.add("active");
+                localStorage.setItem("darkMode", "on");
+                document.querySelectorAll(".game-container").forEach(el => el.classList.add("dark-glow"));
+                darkOverlay.style.transition = "opacity 0.8s ease-in";
+            }
+        }
+
+        // 🎨 Theme Handling
+        const themeToggle = document.getElementById("theme-toggle");
+        const themeMenu = document.getElementById("theme-menu");
+
+        themeToggle.onclick = () => {
+            themeMenu.classList.toggle("show");
+        };
+
+        function setTheme(theme) {
+            document.body.className = theme;
+            localStorage.setItem("theme", theme);
+        }
+
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) document.body.className = savedTheme;
+
+        window.addEventListener("DOMContentLoaded", () => {
+            if (localStorage.getItem("darkMode") === "on") {
+                darkOverlay.classList.add("active");
+                document.querySelectorAll(".game-container").forEach(el => el.classList.add("dark-glow"));
+            }
+
+            const hour = new Date().getHours();
+            if ((hour >= 19 || hour <= 6) && !localStorage.getItem("darkMode")) {
+                toggleDarkOverlay();
+            }
+
+            window.addEventListener("beforeunload", () => {
+                darkOverlay.style.transition = "opacity 0.4s ease";
+                darkOverlay.style.opacity = "0";
+            });
+
+            const email = localStorage.getItem('email');
+            if (email) {
+                const accountLink = document.getElementById("account-link");
+                accountLink.innerHTML = email.split('@')[0];
+                accountLink.href = '#';
+                document.getElementById("sign-out-button").style.display = 'block';
+                document.getElementById("account-button").style.display = 'none';
+            }
+        });
+    </script>
+
+    <style>
+        /* 🔥 Dark Overlay */
+        .dark-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            opacity: 0;
+            transition: opacity 0.8s ease;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+            .dark-overlay.active {
+                opacity: 1;
+            }
+
+        .game-container.dark-glow {
+            box-shadow: 0 0 20px white;
+            transition: box-shadow 0.5s ease;
+        }
+
+        /* 🌙 Dark Toggle */
+        #dark-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(145deg, #333, #222);
+            color: #fff;
+            padding: 12px 16px;
+            border-radius: 50%;
+            box-shadow: 0 0 12px rgba(255, 0, 255, 0.5);
+            font-size: 1.3em;
+            cursor: pointer;
+            z-index: 9999;
+            transition: all 0.3s ease;
+        }
+
+            #dark-toggle:hover {
+                animation: flicker 0.4s infinite alternate;
+                text-shadow: 0 0 5px #f0f, 0 0 10px #f0f;
+            }
+
+        @keyframes flicker {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.7;
+            }
+        }
+
+        /* 🎨 Theme Toggle */
+        #theme-toggle {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            background: linear-gradient(145deg, #333, #111);
+            color: #fff;
+            padding: 12px 16px;
+            border-radius: 50%;
+            box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+            font-size: 1.3em;
+            cursor: pointer;
+            z-index: 9999;
+        }
+
+        #theme-menu {
+            position: fixed;
+            bottom: 140px;
+            right: 20px;
+            background: #222;
+            padding: 10px;
+            border-radius: 10px;
+            display: none;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 9999;
+        }
+
+            #theme-menu.show {
+                display: flex;
+            }
+
+            #theme-menu button {
+                padding: 8px;
+                background: #333;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+
+                #theme-menu button:hover {
+                    background: #555;
+                }
+
+                #theme-menu {
+  max-height: 450px; /* Adjust height as needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+        /* 🎨 Themes */
+        body.default {
+            background: #111;
+            color: white;
+        }
+
+        body.cyberpunk {
+            background: #0f0f0f;
+            color: #39ff14;
+        }
+
+            body.cyberpunk .game-container {
+                border: 1px solid #39ff14;
+            }
+
+        body.midnight {
+            background: #000014;
+            color: #99ccff;
+        }
+
+            body.midnight .game-container {
+                border: 1px solid #99ccff;
+            }
+
+
+        body.PaperB {
+            background: url('images/Paper.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        body.pixelblast {
+            background: url('images/pixel-stars.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+body.Galaxy .game-container {
+  border: 1.5px solid #4d0679;
+  box-shadow: 0 0 8px #5002b6;
+  transition: box-shadow 0.3s ease;
+}
+
+body.Galaxy .game-container:hover {
+  box-shadow: 0 0 15px #5b04a7;
+}
+
+body.Galaxy {
+  background: url('images/galaxy_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #5f0fc1;
+  text-shadow: 0 0 8px #800fbd;
+}
+
+body.Sky .game-container {
+  border: 1.5px solid #0142b9;
+  box-shadow: 0 0 8px #2379cf;
+  transition: box-shadow 0.3s ease;
+}
+
+body.Sky .game-container:hover {
+  box-shadow: 0 0 15px #172ec6;
+}
+
+body.Sky {
+  background: url('images/Sky.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #0067c8;
+  text-shadow: 0 0 8px #0d00ff;
+}
+
+        body.Glitch {
+            background: url('images/Glitch.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+body.HackerCMD .game-container {
+  border: 1.5px solid #0b5707;
+  box-shadow: 0 0 8px #3a8128;
+  transition: box-shadow 0.3s ease;
+}
+
+body.HackerCMD .game-container:hover {
+  box-shadow: 0 0 15px #0d5402;
+}
+
+body.HackerCMD {
+  background: url('images/CMD.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: #04570e;
+  text-shadow: 0 0 8px #0c8005;
+}
+
+body.vip-aurora {
+  background: #6f0695; /* solid black background */
+  color: #39ff14;  /* neon green text */
+  text-shadow: 0 0 8px #39ff14;
+}
+
+body.vip-aurora .game-container {
+  border: 1.5px solid #41058b;
+  box-shadow: 0 0 8px #9106c0;
+  transition: box-shadow 0.3s ease;
+}
+
+body.vip-aurora .game-container:hover {
+  box-shadow: 0 0 15px #4804ad;
+}
+
+body.vip-aurora {
+  background: url('images/aurora.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #4b0ebc;
+  text-shadow: 0 0 8px #4b05a0;
+}
+
+body.vip-neon {
+  background: #000; /* solid black background */
+  color: #39ff14;  /* neon green text */
+  text-shadow: 0 0 8px #39ff14;
+}
+
+body.vip-neon .game-container {
+  border: 1.5px solid #39ff14;
+  box-shadow: 0 0 8px #39ff14;
+  transition: box-shadow 0.3s ease;
+}
+
+body.vip-neon .game-container:hover {
+  box-shadow: 0 0 15px #023c03;
+}
+
+body.vip-neon {
+  background: url('images/neon-bg.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #369033;
+  text-shadow: 0 0 8px #1d700d;
+
+body.vip-sun {
+  background: #be8406; /* solid black background */
+  color: #bb750c;  /* neon green text */
+  text-shadow: 0 0 8px #39ff14;
+}
+
+}
+body.vip-sun .game-container {
+  border: 1.5px solid #ffc014;
+  box-shadow: 0 0 8px #e4670d;
+  transition: box-shadow 0.3s ease;
+}
+
+body.vip-sun .game-container:hover {
+  box-shadow: 0 0 15px #fbba17;
+}
+
+body.vip-sun {
+  background: url('images/sun.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fc8124;
+  text-shadow: 0 0 8px #ffb027;
+}
+
+body.vip-drift {
+  background: #13741d; /* solid black background */
+  color: #28680f;  /* neon green text */
+  text-shadow: 0 0 8px #39ff14;
+}
+
+
+body.vip-drift .game-container {
+  border: 1.5px solid #256208;
+  box-shadow: 0 0 8px green;
+  transition: box-shadow 0.3s ease;
+}
+
+body.vip-drift .game-container:hover {
+  box-shadow: 0 0 15px rgb(89, 255, 47);
+}
+
+body.vip-drift {
+  background: url('images/Nebula_Drift.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #45b500;
+  text-shadow: 0 0 8px #0fac12;
+}
+
+    </style>
+    <script>
+function checkVIPAccess(themeName) {
+  const isVIP = localStorage.getItem('isVIP') === 'true';
+
+  const vipThemes = ['vip-aurora', 'vip-neon', 'vip-sun', 'vip-drift']; // Use actual VIP names
+
+  if (vipThemes.includes(themeName) && !isVIP) {
+    alert('🔒 VIP access required to use this theme!');
+    console.log('VIP=False');
+    return false;
+  }
+
+  console.log('VIP=True');
+  setTheme(themeName);
+  return true;
+}
+
+function setTheme(themeName) {
+  document.body.className = '';
+  document.body.classList.add(themeName);
+  localStorage.setItem("theme", themeName);
+}
+</script>
+<script src="commands.js"></script>
+</html>
